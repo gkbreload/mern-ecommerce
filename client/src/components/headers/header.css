@@ -1,0 +1,42 @@
+header{
+    min-height: 70px;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; /* icon berjajar horizontal - justify */
+    align-items: center; /* icon berjajar vertical - justify */
+    border-bottom: 1px solid #ddd; /* garis bawah */
+}
+header .logo{
+    flex: 1; /* terbagi menjadi 2 bagian ke samping */
+}
+header a{
+    text-transform: uppercase; /* mengubah huruf header menjadi besar */
+    color: #555;
+}
+header ul li{
+    display: inline-block; /* sebaris */
+    opacity: 0.7; /* kontras */
+    padding: 0 20px; /* jarak antar item (x) */
+}
+header ul li:hover{
+    opacity: 1;
+}
+.menu{
+    display: none;
+}
+.cart-icon{
+    position: relative;
+    margin-right: 20px;
+}
+.cart-icon span{
+    background: crimson;
+    border-radius: 20px; /* sudut pojok */
+    color: white;
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    padding: 5px 7px;
+    font-size: 10px;
+}
